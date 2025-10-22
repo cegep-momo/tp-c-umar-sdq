@@ -11,8 +11,6 @@ Book::Book(const string& title, const string& author, const string& isbn)
 : title(title), author(author), isbn(isbn) {
 
 }
-//destrc.
-Book::Book(){}
 
 //get
 

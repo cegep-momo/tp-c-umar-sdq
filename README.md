@@ -14,3 +14,9 @@ $ make
 
 Il contient 2 fichiers `books.txt`et `users.txt` que vous pouvez utilisez pour tester votre code.
 Pour ca il suffit de les copiers dans le repertoire `build` avec l'application `bibliotheque`
+
+Question 1:
+Dans mon code (Book.cpp) jai creer deux fonctions pour sauvegaRder et recharger les livres dans books.txt. toFileFormat() transforme les infos du livre en une ligne separe par des |.
+Jai utilise from FileFormat pour faire l'inverse.
+Question 2:
+Si la biblio agrandit, on peut utiliser une base de donnees SQL, pour stocker le titre, l'auteur et l'ISBN, les recherches les tri seraient beaucoup plus efficaces et rapides. Ca serait une faconm de, non seulement optimiser, mais aussi ameliorer la fiabilite et la securite des donnees.

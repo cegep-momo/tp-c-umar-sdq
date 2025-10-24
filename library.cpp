@@ -203,3 +203,16 @@ int Library::getAvailableBookCount() const {
 }
 int Library::getCheckedOutBookCount() const { return getTotalBooks() - getAvailableBookCount(); }
 
+void Library::TriLivreParTitre() {
+    sort(books.begin(), books.end(),
+        [](const unique_ptr<Book>& a, const unique_ptr<Book>& b) {
+            return a->getTitle() < b->getTitle();
+        });
+}
+
+void Library::TriLivreParAuteur() {
+    sort(books.begin(), books.end(),
+        [](const unique_ptr<Book>& a, const unique_ptr<Book>& b) {
+            return a->getAuthor() < b->getAuthor();
+        });
+}
